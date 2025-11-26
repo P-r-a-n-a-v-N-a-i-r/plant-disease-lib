@@ -31,7 +31,7 @@ class PlantDiseasePredictor:
         self.disease_info = pd.read_csv(self.disease_csv_path, encoding="cp1252")
         self.supplement_info = pd.read_csv(self.supplement_csv_path, encoding="cp1252")
 
-        self.model = CNN.CNN(self.num_classes)
+        self.model = CNN(self.num_classes)
         state_dict = torch.load(self.model_path, map_location=self.device)
         self.model.load_state_dict(state_dict)
         self.model.eval()

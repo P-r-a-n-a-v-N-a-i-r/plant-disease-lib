@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='plant_disease_lib',
-    version='0.1.1',
+    version='0.1.3',
     author='Pranav Nair',
     author_email='pranavshivannair@gmail.com',
     description='A library for plant disease detection using deep learning',
