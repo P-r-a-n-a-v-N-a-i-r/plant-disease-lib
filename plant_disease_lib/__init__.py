@@ -7,7 +7,7 @@ import pandas as pd
 import torch
 import torchvision.transforms.functional as TF
 
-import CNN
+from .CNN import CNN
 
 class PlantDiseasePredictor:
     def __init__(
